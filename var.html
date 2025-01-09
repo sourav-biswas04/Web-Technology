@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+    <style>
+        :root{
+            --color:blue;
+            --seccolor: rgb(168, 168, 228);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    ul li{
+    list-style-type: none;
+    padding: 33px;
+    border: 2px solid var(--seccolor);
+
+    }
+    ul li:first-child{
+        --color: rgb(9, 122, 60);
+        background-color: var( --color);
+
+    }
+    ul{
+        display:flex;
+        padding: 30px;
+    }
+    .container{
+        background-color: var( --seccolor);
+    }
+    .nav{
+        background-color: var( --color);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eius assumenda, asperiores odio id officia, soluta pariatur voluptatem a voluptates qui maxime laudantium hic aspernatur ab dolores. Eveniet, suscipit accusamus!
+        Fugit quam neque, nemo quia voluptatum magni quasi iste recusandae laboriosam incidunt qui iure possimus voluptate sapiente quibusdam! Commodi deleniti fugit ut, ipsa velit voluptas culpa vero eveniet ad dolore!
+        Consequuntur maxime esse laudantium fuga odit iste natus animi modi deleniti, inventore nisi odio? Mollitia maiores pariatur eligendi dolor repellat numquam ab est nostrum, non delectus exercitationem omnis amet officiis.
+        Dicta fugit aut cupiditate dolor cumque accusamus quo sit doloribus velit voluptatum veniam corporis quos quis, necessitatibus aliquam animi eligendi minus minima sed! Laborum, illo voluptatum est sapiente sint vitae.
+    </div>
+</body>
+</html>
