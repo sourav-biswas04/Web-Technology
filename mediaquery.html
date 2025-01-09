@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        @media only screen and (max-width: 455px){
+        body{
+            background-color: blue;
+        }   
+    } 
+    .box{
+        
+        height: 344px;
+        width: 344px;
+        background-color: blueviolet;
+        padding: 3px;
+        margin: 3px;
+    }
+
+    .boxes{
+        display: flex;
+    }
+    @media screen and (orientation:landscape) {
+        body{
+            border: 8px solid yellow;
+        }
+    }
+      
+    </style>
+</head>
+<body>
+    <div>
+        My name is Sourav Biswas.....
+    </div>
+<div class="boxes">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+</body>
+</html>
