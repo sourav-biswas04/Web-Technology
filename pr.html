@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposal Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin: 15px 0 10px;
+      color: #333;
+    }
+    .card p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .card button {
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .card button:hover {
+      background-color: #ff4a4a;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="page1" class="card">
+    <img src="./pic.jpg" alt="Page 1">
+    <h3>Our Journey</h3>
+    <p>It all started with a smile, and now you're my everything.</p>
+    <button onclick="showPage('page2')">Next</button>
+  </div>
+
+  <div id="page2" class="card hidden">
+    <img src="./pic.jpg" alt="Page 2">
+    <h3>You & Me</h3>
+    <p>Through the highs and lows, you complete me in every way.</p>
+    <button onclick="showPage('page3')">Next</button>
+  </div>
+
+  <div id="page3" class="card hidden">
+    <img src="./pic.jpg" alt="Page 3">
+    <h3>Will You Marry Me?</h3>
+    <p>I can't imagine a life without you. Say yes to forever.</p>
+    <button onclick="showProposal()">Yes, I Do!</button>
+  </div>
+
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('.card').forEach(card => card.classList.add('hidden'));
+      document.getElementById(pageId).classList.remove('hidden');
+    }
+
+    function showProposal() {
+      alert("You said YES! Let's start our forever together ❤");
+    }
+  </script>
+</body>
+</html>
