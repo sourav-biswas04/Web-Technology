@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      text-align: center;
+      padding: 20px;
+    }
+    .card img {
+      border-radius: 10px;
+      width: 100%;
+    }
+    .card h3 {
+      margin: 10px 0;
+      color: #333;
+    }
+    .card button {
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .card button:hover {
+      background-color: #ff4a4a;
+    }
+    .hidden-message {
+      display: none;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #ff6b6b;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="./pic.jpg" alt="Couple">
+    <h3>My Love</h3>
+    <p>I just wanted to take a moment to remind you how special you are to me.</p>
+    <button onclick="revealMessage()">Click Me</button>
+    <div id="message" class="hidden-message">I love you, my love ❤</div>
+  </div>
+
+  <script>
+    function revealMessage() {
+      const message = document.getElementById("message");
+      message.style.display = "block";
+    }
+  </script>
+</body>
+</html>
